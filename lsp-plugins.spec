@@ -35,12 +35,17 @@ make DESTDIR=%{buildroot} PREFIX=%{_prefix}
 %install
 make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
 # We don't need these:
-rm -rf %{buildroot}%{_libdir}/vst/*
+#rm -rf %{buildroot}%{_libdir}/vst/*
 
 %files
 %{_bindir}/*
+%{_sysconfdir}/xdg/menus/applications-merged/lsp-plugins.menu
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
 %{_docdir}/lsp-plugins/*
-#{_libdir}/%{name}/%{name}-jack-core-%{version}.so
+%{_libdir}/lsp-plugins/lsp-plugins-jack-core-.so
 %{_libdir}/%{name}/%{name}-r3d-glx.so
+%{_datadir}/applications/in.lsp_plug.lsp_plugins_*
+%{_datadir}/desktop-directories/lsp-plugins.directory
+%{_iconsdir}/hicolor/*x*/apps/lsp-plugins.png
+%{_iconsdir}icons/hicolor/scalable/apps/lsp-plugins.svg
