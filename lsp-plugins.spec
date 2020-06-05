@@ -5,7 +5,7 @@ Release:  1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
-Source0:	https://github.com/sadko4u/%{name}/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/sadko4u/%{name}/archive/%{name}-%{name}-%{version}.tar.gz
 
 BuildRequires:	ladspa-devel
 BuildRequires:	php-cli
