@@ -42,5 +42,5 @@ rm -rf %{buildroot}%{_libdir}/vst/*
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
 %{_docdir}/lsp-plugins/*
-%{_libdir}/%{name}/%{name}-jack-core-%{version}.so
+#{_libdir}/%{name}/%{name}-jack-core-%{version}.so
 %{_libdir}/%{name}/%{name}-r3d-glx.so
