@@ -48,4 +48,4 @@ make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
 %{_datadir}/applications/in.lsp_plug.lsp_plugins_*
 %{_datadir}/desktop-directories/lsp-plugins.directory
 %{_iconsdir}/hicolor/*x*/apps/lsp-plugins.png
-%{_iconsdir}icons/hicolor/scalable/apps/lsp-plugins.svg
+%{_iconsdir}/hicolor/scalable/apps/lsp-plugins.svg
