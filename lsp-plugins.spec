@@ -46,7 +46,7 @@ make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
 %{_libdir}/lv2/lsp-plugins.lv2/*
 %{_libdir}/vst/lsp-plugins-lxvst-%{version}/lsp-plugins*
 %{_docdir}/lsp-plugins/*
-#{_libdir}/lsp-plugins/lsp-plugins-jack-core-.so
+%{_libdir}/lsp-plugins/lsp-plugins-jack-core-%{version}.so
 %{_libdir}/%{name}/%{name}-r3d-glx.so
 %{_datadir}/applications/in.lsp_plug.lsp_plugins_*
 %{_datadir}/desktop-directories/lsp-plugins.directory
