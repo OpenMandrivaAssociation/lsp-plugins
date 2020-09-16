@@ -2,7 +2,7 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.1.24
+Version:	1.1.26
 Release:  1
 License:	GPLv3
 Group:		System/Libraries
