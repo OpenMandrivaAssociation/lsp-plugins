@@ -7,7 +7,7 @@ Release:  1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
-Source0:	https://github.com/sadko4u/%{name}/archive/%{name}-%{name}-%{version}.tar.gz
+Source0:	https://github.com/sadko4u/%{name}/archive/%{name}-%{version}.tar.gz
 
 BuildRequires:	ladspa-devel
 BuildRequires:	php-cli
@@ -24,7 +24,7 @@ Standalone plugins for JACK are provided since version 1.0.8.
 Experimental support of ARMv7 added since version 1.1.4.
 
 %prep
-%autosetup -p1 -n %{name}-%{name}-%{version}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 #ifarch armv7hl
