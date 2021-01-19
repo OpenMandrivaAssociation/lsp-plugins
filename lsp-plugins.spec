@@ -2,13 +2,12 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.1.28
+Version:	1.1.29
 Release:  1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
 Source0:	https://github.com/sadko4u/%{name}/archive/%{name}-%{version}.tar.gz
-Patch0:         lsp-plugins-1.1.28-plugins.php.patch
 
 BuildRequires:	ladspa-devel
 BuildRequires:	php-cli
