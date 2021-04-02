@@ -41,14 +41,14 @@ make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
 
 %files
 %{_bindir}/*
-%{_sysconfdir}/xdg/menus/applications-merged/lsp-plugins.menu
+#{_sysconfdir}/xdg/menus/applications-merged/lsp-plugins.menu
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
 %{_libdir}/vst/lsp-plugins-lxvst-%{version}/lsp-plugins*
 %{_docdir}/lsp-plugins/*
 %{_libdir}/lsp-plugins/lsp-plugins-jack-core-%{version}.so
 %{_libdir}/%{name}/%{name}-r3d-glx.so
-%{_datadir}/applications/in.lsp_plug.lsp_plugins_*
-%{_datadir}/desktop-directories/lsp-plugins.directory
-%{_iconsdir}/hicolor/*x*/apps/lsp-plugins.png
-%{_iconsdir}/hicolor/scalable/apps/lsp-plugins.svg
+#{_datadir}/applications/in.lsp_plug.lsp_plugins_*
+#{_datadir}/desktop-directories/lsp-plugins.directory
+#{_iconsdir}/hicolor/*x*/apps/lsp-plugins.png
+#{_iconsdir}/hicolor/scalable/apps/lsp-plugins.svg
