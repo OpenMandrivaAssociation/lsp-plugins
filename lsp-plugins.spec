@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(expat)
 BuildRequires:	pkgconfig(jack) 
 BuildRequires:	pkgconfig(lv2)
 BuildRequires:	pkgconfig(sndfile)
+BuildRequires:  pkgconfig(opengl)
 
 %description
 LSP (Linux Studio Plugins) is a collection of open-source plugins currently
