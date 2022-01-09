@@ -31,7 +31,7 @@ Experimental support of ARMv7 added since version 1.1.4.
 
 %make PREFIX=%{_prefix} \
     BIN_PATH=%{_bindir} LIB_PATH=%{_libdir} \
-    DOC_PATH=%{_docdir}
+    BUILD_MODULES='lv2 vst ladspa jack'
 
 
 %install
