@@ -27,12 +27,11 @@ Experimental support of ARMv7 added since version 1.1.4.
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-#ifarch armv7hl
-# Force building for armv7 even if hardware/kernel is armv8
-#make DESTDIR=%{buildroot} PREFIX=%{_prefix} BUILD_PROFILE=armv7a
-#else
-make DESTDIR=%{buildroot} PREFIX=%{_prefix}
-#endif
+
+%make PREFIX=%{_prefix} \
+    BIN_PATH=%{_bindir} LIB_PATH=%{_libdir} \
+    DOC_PATH=%{_docdir}
+
 
 %install
 make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
