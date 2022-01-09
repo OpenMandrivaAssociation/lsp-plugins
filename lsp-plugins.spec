@@ -1,4 +1,5 @@
 #global debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
