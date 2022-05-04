@@ -4,7 +4,7 @@
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
 Version:	1.2.1
-Release:    1
+Release:	1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
@@ -29,7 +29,7 @@ Experimental support of ARMv7 added since version 1.1.4.
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-
+make config \
 %make PREFIX=%{_prefix} \
     BIN_PATH=%{_bindir} LIB_PATH=%{_libdir} \
     BUILD_MODULES='lv2 vst ladspa jack'
