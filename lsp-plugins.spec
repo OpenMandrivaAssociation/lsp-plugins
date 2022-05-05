@@ -46,10 +46,12 @@ make config \
 	SHAREDDIR=%{_datadir}
 
 %files
+%doc %{_datadir}/doc/lsp-plugins/
 %{_bindir}/*
-#{_libdir}/ladspa/lsp-plugins-ladspa.so
+%{_libdir}/vst/lsp-plugins/
+%{_libdir}/lsp-plugins/liblsp-plugins-jack-%{version}.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
-#{_libdir}/vst/lsp-plugins-lxvst-%{version}/lsp-plugins*
-#{_libdir}/lsp-plugins/lsp-plugins-jack-core-%{version}.so
-#{_libdir}/%{name}/%{name}-r3d-glx.so
+%{_libdir}/liblsp-r3d-glx-lib*
+%{_libdir}/ladspa/lsp-plugins-ladspa-%{version}.so
+%{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
 
