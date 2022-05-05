@@ -36,7 +36,14 @@ make config \
 
 
 %install
-make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
+#make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIB_PATH=%{_libdir}
+
+%make_install \
+    DESTDIR=%{buildroot} \
+	PREFIX=%{_prefix} \
+	LIBDIR=%{_libdir} \
+	BINDIR=%{_bindir} \
+	SHAREDDIR=%{_datadir}
 
 %files
 %{_bindir}/*
