@@ -47,9 +47,9 @@ make config \
 
 %files
 %{_bindir}/*
-%{_libdir}/ladspa/lsp-plugins-ladspa.so
+#{_libdir}/ladspa/lsp-plugins-ladspa.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
-%{_libdir}/vst/lsp-plugins-lxvst-%{version}/lsp-plugins*
-%{_libdir}/lsp-plugins/lsp-plugins-jack-core-%{version}.so
-%{_libdir}/%{name}/%{name}-r3d-glx.so
+#{_libdir}/vst/lsp-plugins-lxvst-%{version}/lsp-plugins*
+#{_libdir}/lsp-plugins/lsp-plugins-jack-core-%{version}.so
+#{_libdir}/%{name}/%{name}-r3d-glx.so
 
