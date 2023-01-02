@@ -46,7 +46,7 @@ make config FEATURES='lv2 vst2 ladspa jack' \
 	SHAREDDIR=%{_datadir}
 
 %files
-%doc %{_datadir}/doc/lsp-plugins/
+#doc %{_datadir}/doc/lsp-plugins/
 %{_bindir}/*
 %{_libdir}/vst/lsp-plugins/
 %{_libdir}/lsp-plugins/liblsp-plugins-jack-%{version}.so
