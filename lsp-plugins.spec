@@ -30,7 +30,7 @@ Experimental support of ARMv7 added since version 1.1.4.
 %autosetup -p1 -n %{name}
 
 %build
-make config FEATURES='lv2 vst2 ladspa jack' \
+make config FEATURES='lv2 vst2 ladspa jack xdg' \
 %make_build PREFIX=%{_prefix} LIBDIR=%{_libdir} SHAREDDIR=%{_datadir} BINDIR=%{_bindir}
     BUILD_MODULES='lv2 vst ladspa jack'
 
@@ -54,4 +54,5 @@ make config FEATURES='lv2 vst2 ladspa jack' \
 %{_libdir}/liblsp-r3d-glx-lib*
 %{_libdir}/ladspa/lsp-plugins-ladspa-%{version}.so
 %{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
+%{_includedir}/lsp-plug.in/r3d/
 
