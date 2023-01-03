@@ -3,7 +3,7 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.2.3
+Version:	1.2.4
 Release:	1
 License:	GPLv3
 Group:		System/Libraries
@@ -30,9 +30,8 @@ Experimental support of ARMv7 added since version 1.1.4.
 %autosetup -p1 -n %{name}
 
 %build
-make config \
-%make PREFIX=%{_prefix}
-    BIN_PATH=%{_bindir} LIB_PATH=%{_libdir} \
+make config FEATURES='lv2 vst2 ladspa jack xdg' \
+%make_build PREFIX=%{_prefix} LIBDIR=%{_libdir} SHAREDDIR=%{_datadir} BINDIR=%{_bindir}
     BUILD_MODULES='lv2 vst ladspa jack'
 
 
@@ -47,7 +46,7 @@ make config \
 	SHAREDDIR=%{_datadir}
 
 %files
-%doc %{_datadir}/doc/lsp-plugins/
+#doc %{_datadir}/doc/lsp-plugins/
 %{_bindir}/*
 %{_libdir}/vst/lsp-plugins/
 %{_libdir}/lsp-plugins/liblsp-plugins-jack-%{version}.so
@@ -55,4 +54,9 @@ make config \
 %{_libdir}/liblsp-r3d-glx-lib*
 %{_libdir}/ladspa/lsp-plugins-ladspa-%{version}.so
 %{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
-
+%{_includedir}/lsp-plug.in/r3d/
+%{_datadir}/applications/in.lsp_plug.lsp_plugins*
+%{_datadir}/desktop-directories/lsp-plugins.directory
+%{_datadir}/icons/hicolor/*x*/apps/lsp-plugins.png
+%{_datadir}/icons/hicolor/scalable/apps/lsp-plugins.svg
+%{_sysconfdir}/xdg/menus/applications-merged/%{name}.menu
