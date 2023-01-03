@@ -55,4 +55,8 @@ make config FEATURES='lv2 vst2 ladspa jack xdg' \
 %{_libdir}/ladspa/lsp-plugins-ladspa-%{version}.so
 %{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
 %{_includedir}/lsp-plug.in/r3d/
-
+%{_datadir}/applications/in.lsp_plug.lsp_plugins*
+%{_datadir}/desktop-directories/lsp-plugins.directory
+%{_datadir}/icons/hicolor/*x*/apps/lsp-plugins.png
+%{_datadir}/icons/hicolor/scalable/apps/lsp-plugins.svg
+%{_sysconfdir}/xdg/menus/applications-merged/%{name}.menu
