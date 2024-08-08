@@ -3,13 +3,14 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.2.16
+Version:	1.2.17
 Release:	1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
-Source0:	https://github.com/sadko4u/lsp-plugins/releases/download/%{version}/lsp-plugins-src-%{version}.tar.gz
+Source0:	https://github.com/sadko4u/lsp-plugins/releases/download/%{version}/lsp-plugins-src-%{version}.7z
 
+BuildRequires:	7zip
 BuildRequires:	ladspa-devel
 BuildRequires:	php-cli
 BuildRequires:	pkgconfig(cairo)
@@ -27,7 +28,7 @@ Standalone plugins for JACK are provided since version 1.0.8.
 Experimental support of ARMv7 added since version 1.1.4.
 
 %prep
-%autosetup -p1 -n %{name}
+%autosetup -p1 -n %{name}-src-%{version}
 
 %build
 make config FEATURES='lv2 vst2 ladspa jack xdg' \
@@ -48,12 +49,10 @@ make config FEATURES='lv2 vst2 ladspa jack xdg' \
 %files
 #doc %{_datadir}/doc/lsp-plugins/
 %{_bindir}/*
-%{_libdir}/vst/lsp-plugins/
 %{_libdir}/lsp-plugins/liblsp-plugins-jack-%{version}.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
-%{_libdir}/liblsp-r3d-glx-lib*
+%{_libdir}/vst/lsp-plugins.vst/
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
-%{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
 %{_datadir}/applications/in.lsp_plug.lsp_plugins*
 %{_datadir}/desktop-directories/lsp-plugins.directory
 %{_datadir}/icons/hicolor/*x*/apps/lsp-plugins.png
