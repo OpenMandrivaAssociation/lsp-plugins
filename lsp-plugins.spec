@@ -28,7 +28,7 @@ Standalone plugins for JACK are provided since version 1.0.8.
 Experimental support of ARMv7 added since version 1.1.4.
 
 %prep
-%autosetup -p1 -n %{name}-%{version}
+%autosetup -p1 -n %{name}-src-%{version}
 
 %build
 make config FEATURES='lv2 vst2 ladspa jack xdg' \
