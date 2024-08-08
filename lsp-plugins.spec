@@ -49,12 +49,12 @@ make config FEATURES='lv2 vst2 ladspa jack xdg' \
 %files
 #doc %{_datadir}/doc/lsp-plugins/
 %{_bindir}/*
-%{_libdir}/vst/lsp-plugins/
+#{_libdir}/vst/lsp-plugins/
 %{_libdir}/lsp-plugins/liblsp-plugins-jack-%{version}.so
 %{_libdir}/lv2/lsp-plugins.lv2/*
-%{_libdir}/liblsp-r3d-glx-lib*
+#{_libdir}/liblsp-r3d-glx-lib*
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
-%{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
+#{_libdir}/pkgconfig/lsp-r3d-glx-lib.pc
 %{_datadir}/applications/in.lsp_plug.lsp_plugins*
 %{_datadir}/desktop-directories/lsp-plugins.directory
 %{_datadir}/icons/hicolor/*x*/apps/lsp-plugins.png
