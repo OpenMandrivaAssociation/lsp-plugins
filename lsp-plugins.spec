@@ -3,12 +3,12 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.2.18
+Version:	1.2.19
 Release:	1
 License:	GPLv3
 Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
-Source0:	https://github.com/sadko4u/lsp-plugins/releases/download/%{version}/lsp-plugins-src-%{version}.7z
+Source0:	https://github.com/sadko4u/lsp-plugins/releases/download/%{version}/lsp-plugins-src-%{version}.tar.gz
 
 BuildRequires:	7zip
 BuildRequires:	ladspa-devel
