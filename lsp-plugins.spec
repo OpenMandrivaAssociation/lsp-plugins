@@ -10,6 +10,7 @@ Group:		System/Libraries
 URL:		https://github.com/sadko4u/lsp-plugins/releases
 Source0:	https://github.com/sadko4u/lsp-plugins/releases/download/%{version}/lsp-plugins-src-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	7zip
 BuildRequires:	ladspa-devel
 BuildRequires:	php-cli
