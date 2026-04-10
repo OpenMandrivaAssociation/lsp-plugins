@@ -54,6 +54,7 @@ make config FEATURES='lv2 vst2 ladspa jack xdg' \
 %{_libdir}/lv2/lsp-plugins.lv2/*
 %{_libdir}/vst/lsp-plugins.vst/
 %{_libdir}/ladspa/lsp-plugins-ladspa.so
+%{_datadir}/applications/lsp-plugins.desktop
 #{_datadir}/applications/in.lsp_plug.lsp_plugins*
 #{_datadir}/desktop-directories/lsp-plugins.directory
 %{_datadir}/icons/hicolor/*x*/apps/lsp-plugins.png
