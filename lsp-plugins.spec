@@ -3,7 +3,7 @@
 
 Name:		lsp-plugins
 Summary:	A collection of plugins which aim to bring new, non existing plugins to Linux
-Version:	1.2.29
+Version:	1.2.33
 Release:	1
 License:	GPLv3
 Group:		System/Libraries
@@ -29,7 +29,7 @@ Standalone plugins for JACK are provided since version 1.0.8.
 Experimental support of ARMv7 added since version 1.1.4.
 
 %prep
-%autosetup -p1 -n %{name}
+%autosetup -p1 -n lsp-plugins
 
 %build
 make config FEATURES='lv2 vst2 ladspa jack xdg' \
